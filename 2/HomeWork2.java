@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class HomeWork {
+class HomeWork2 {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
@@ -9,18 +9,23 @@ class HomeWork {
 
 		int asize = scanner.nextInt();
 		int array[] = new int[asize];
-		int arraySum = 0;
 
 		for (int i = 0; i < array.length; i++) {
-			System.out.print("Please, enter the number: ");
+			System.out.print("Enter the number: ");
 			array[i] = scanner.nextInt();
 		}
-		
-		for (int i =0; i < array.length; i++) {
-			arraySum += array[i];
+
+		//Вывод в зеркальном представлении
+		System.out.println("Array in mirror: ");
+
+		for (int i = array.length - 1; i >= 0; i--) {
+			System.out.print(array[i] + " ");
 		}
 
+		//Вывод в не зеркальном представлении
+		System.out.println("");
 		System.out.println(Arrays.toString(array));
-		System.out.println(arraySum);
+
+
 	}
 }
