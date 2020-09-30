@@ -25,7 +25,5 @@ class HomeWork2 {
 		//Вывод в не зеркальном представлении
 		System.out.println("");
 		System.out.println(Arrays.toString(array));
-
-
 	}
 }
