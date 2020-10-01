@@ -31,7 +31,7 @@ class Program3 {
 
 			if (isPrime) {
 				total *= numfortotal;
-				System.out.println("total = " + total);
+				System.out.println("total = " + total);  //Сразу выводим результат
 			}
 
 			//Приводим сумму цифр к нулю, чтобы не накапливалась сумма
@@ -40,8 +40,6 @@ class Program3 {
 			}
 			j++;
 		}
-			System.out.println("total = " + total);
-
-		
+			System.out.println("total = " + total);		//Выводит 0, потому что умножает 0... WHY?
 	}
 }
