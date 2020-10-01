@@ -10,28 +10,28 @@ class Program3 {
 		int count = 5;
 		int sumOfDigit = 0;
 		int j = 0;
-		int multinum = 1;
+		int total = 1;
 
 		while (j < count) {
-			currentNumber = scanner.nextInt();			
+			currentNumber = scanner.nextInt();
+			int numfortotal = currentNumber;
 			for (; currentNumber > 0; currentNumber /= 10) {
 				sumOfDigit += currentNumber % 10;
 			}
 			System.out.println("Sum of Digits = " + sumOfDigit);
 
 			boolean isPrime = true;
-			for (int i = 2; i < sumOfDigit / 2; i++ ) {
+			for (int i = 2; i < sumOfDigit / 2; i++) {
 				if (sumOfDigit % i == 0) { 
 					isPrime = false;
 					break;
 				}
 			}
 			System.out.println("PrimeNumber? - " + isPrime);
-			System.out.println("multinum = " + multinum);
 
 			if (isPrime) {
-				multinum *= currentNumber;
-				System.out.println("multinum = " + multinum);
+				total *= numfortotal;
+				System.out.println("total = " + total);
 			}
 
 			//Приводим сумму цифр к нулю, чтобы не накапливалась сумма
@@ -40,7 +40,7 @@ class Program3 {
 			}
 			j++;
 		}
-			System.out.println("multinum = " + multinum);
+			System.out.println("total = " + total);
 
 		
 	}
