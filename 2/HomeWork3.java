@@ -24,7 +24,7 @@ class HomeWork3 {
 		arrayAverage = arraySum / array.length;
 
 		System.out.println(Arrays.toString(array));
-		//Знак "~" используется потому, что выдаёт только целые числа, если будет среднее "805,5", выдаст "805"
-		System.out.println("Average an array ~ " + arrayAverage);
+		//Знак "≈" используется потому, что выдаёт только целые числа, если будет среднее "805,5", выдаст "805"
+		System.out.println("Average an array ≈ " + arrayAverage);
 	}
 }
