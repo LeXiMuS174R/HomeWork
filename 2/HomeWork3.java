@@ -10,7 +10,7 @@ class HomeWork3 {
 		int asize = scanner.nextInt();
 		int array[] = new int[asize];
 		int arraySum = 0;
-		int arrayAverage = 0;
+		int arrayMean = 0;
 
 		for (int i = 0; i < array.length; i++) {
 			System.out.print("Please, enter the number: ");
@@ -21,10 +21,10 @@ class HomeWork3 {
 			arraySum += array[i];
 		}
 
-		arrayAverage = arraySum / array.length;
+		arrayMean = arraySum / array.length;
 
 		System.out.println(Arrays.toString(array));
 		//Знак "≈" используется потому, что выдаёт только целые числа, если будет среднее "805,5", выдаст "805"
-		System.out.println("Average an array ≈ " + arrayAverage);
+		System.out.println("Array mean ≈ " + arrayMean);
 	}
 }
