@@ -1,8 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class HomeWork4
-{
+class HomeWork4 {
     public static void main(String[] args) {
 
         System.out.println("Enter count of number ");
@@ -38,13 +37,13 @@ class HomeWork4
                 if (array[i] < min) {
                     min = array[i];
                     low = low + 1;
-                }   
+                }
             }
             for (i = 0; i < count; i++) {
-                if (array[i] > max) { 
+                if (array[i] > max) {
                     max = array[i];
                     high = high + 1;
-                } 
+                }
             }
 
             System.out.println("Maximum array element = " + max);
